@@ -1,0 +1,16 @@
+// 按需引入Taro-ui的css
+@import "~taro-ui/dist/style/components/icon.scss";
+
+#app,
+body,
+html,
+.taro_router,
+.taro_page {
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+}
+
+page {
+  height: 100%;
+}

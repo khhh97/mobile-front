@@ -1,0 +1,13 @@
+{
+  "miniprogramRoot": "./dist",
+  "projectname": "mobile",
+  "description": "毕业设计-基于taro多平台技术分享交流类小程序",
+  "appid": "wx1346cbde725c2a08",
+  "setting": {
+    "urlCheck": true,
+    "es6": false,
+    "postcss": false,
+    "minified": false
+  },
+  "compileType": "miniprogram"
+}
