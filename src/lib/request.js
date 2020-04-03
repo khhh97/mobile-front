@@ -1,10 +1,6 @@
 import Taro from '@tarojs/taro';
 import Api from '../api';
-
-const baseUrl =
-  process.env.NODE_ENV === 'development'
-    ? 'https://api-dev.khhh.ink/api'
-    : 'https://api-dev.khhh.ink/api';
+import { baseUrl } from '../env';
 
 /**
  * @description 封装的请求方法
@@ -35,8 +31,8 @@ const request = (name, option = {}) => {
       {},
       {
         'Content-Type': 'application/json',
-        'token': Taro.getStorageSync('token')|| '',
-        'platform': Taro.getEnv()
+        token: Taro.getStorageSync('token') || '',
+        platform: Taro.getEnv().toLowerCase()
       },
       header
     );

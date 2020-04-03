@@ -1,11 +1,13 @@
 {
   "compilerOptions": {
+    "experimentalDecorators": true,
     "baseUrl": ".",
     "paths": {
       "@/components/*": ["./src/components/*"],
       "@/lib/*": ["./src/lib/*"],
       "@/package": ["./package.json"],
-      "@/assets": ["./src/assets/*"]
+      "@/assets": ["./src/assets/*"],
+      "@/store": ["./src/store/*"],
     }
   }
 }

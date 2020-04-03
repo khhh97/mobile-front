@@ -66,8 +66,13 @@
         font-size: 30px;
         width: 160px;
         color: #fff;
+        z-index: 999;
         border-radius: 6px;
         background-color: #3296FA;
+
+        &--pending {
+          background-color: #EDEDED;
+        }
       }
     }
   }

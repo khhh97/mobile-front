@@ -8,6 +8,7 @@ const config = {
     '@/components': path.resolve(__dirname, '..', 'src/components'),
     '@/lib': path.resolve(__dirname, '..', 'src/lib'),
     '@/assets': path.resolve(__dirname, '..', 'src/assets'),
+    '@/store': path.resolve(__dirname, '..', 'src/store'),
     '@/package': path.resolve(__dirname, '..', 'package.json'),
   },
   deviceRatio: {

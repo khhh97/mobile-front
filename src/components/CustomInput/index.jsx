@@ -49,7 +49,7 @@ class CustomInput extends Taro.Component {
     onChange: PropTypes.func,
 
     // 搜索事件
-    onSearch: PropTypes.func,
+    onSubmit: PropTypes.func,
 
     // 输入框聚焦事件
     onFocus: PropTypes.func,
@@ -69,7 +69,7 @@ class CustomInput extends Taro.Component {
     showClear: false,
     placeholderStyle: '',
     onChange: () => {},
-    onSearch: () => {},
+    onSubmit: () => {},
     onFocus: () => {},
     onBlur: () => {}
   };
@@ -115,7 +115,7 @@ class CustomInput extends Taro.Component {
       e.target.blur();
     }
     const { inputValue } = this.state;
-    this.props.onSearch(inputValue, e);
+    this.props.onSubmit(inputValue, e);
   };
 
   // 输入框聚焦

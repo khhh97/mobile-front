@@ -1,37 +1,32 @@
 import Taro, { Component } from '@tarojs/taro';
-import { Provider } from '@tarojs/mobx';
+import { Provider } from '@tarojs/redux';
 import Index from './pages/index';
-
-import counterStore from './store/counter';
-
+import configStore from './store';
+import { getUser } from './store/user/actions';
 import './app.scss';
+
+const store = configStore();
 
 // 如果需要在 h5 环境中开启 React Devtools
 // 取消以下注释：
 // if (process.env.NODE_ENV !== 'production' && process.env.TARO_ENV === 'h5')  {
 //   require('nerv-devtools')
 // }
-
-const store = {
-  counterStore
-};
-
 class App extends Component {
   // eslint-disable-next-line react/sort-comp
   config = {
     pages: [
-      'pages/login/index',
-      'pages/index/index',
       'pages/article/index',
+      'pages/index/index',
       'pages/robot/index',
-      'pages/my/index'
-
+      'pages/my/index',
+      'pages/login/index'
     ],
     window: {
+      navigationBarBackgroundColor: '#3296FA',
       backgroundTextStyle: 'light',
-      navigationBarBackgroundColor: '#fff',
       navigationBarTitleText: 'WeChat',
-      navigationBarTextStyle: 'black'
+      navigationBarTextStyle: 'white'
     },
     // 底部tab栏
     tabBar: {
@@ -67,7 +62,11 @@ class App extends Component {
     }
   };
 
-  componentDidMount() {}
+  componentDidMount() {
+    // 检查是否以获取用户信息
+    const { dispatch } = store;
+    dispatch(getUser());
+  }
 
   componentDidShow() {}
 
