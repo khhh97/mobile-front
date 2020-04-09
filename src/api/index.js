@@ -14,5 +14,54 @@ export default {
   getTopics: {
     url: '/topics',
     method: 'get'
+  },
+  // 上传文件
+  uploadFile: {
+    url: '/upload',
+    method: 'post'
+  },
+  post: {
+    url: '/article',
+    method: 'post'
+  },
+  // 获取文章详情
+  getArticle: {
+    url: '/article',
+    method: 'get'
+  },
+  // 对文章或者评论点赞
+  likeArticleOrComment: {
+    url: '/like',
+    method: 'post'
+  },
+  // 对文章收藏
+  collectArticleOrComment: {
+    url: '/collect',
+    method: 'post'
+  },
+  // 对文章评论
+  commentArticle: {
+    url: '/comment',
+    method: 'post'
+  },
+  // 获取评论
+  getComments: {
+    url: '/comment',
+    method: 'get'
+  },
+  // 关注他人
+  follow: {
+    url: '/follow',
+    method: 'post'
+  },
+  // 获取文章列表
+  getArticles: {
+    url: '/article/list',
+    method: 'get'
+  },
+  // 获取用户信息
+  getUserInfo: {
+    url: '/user/profile',
+    method: 'get'
   }
 };

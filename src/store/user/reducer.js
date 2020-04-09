@@ -1,4 +1,5 @@
 import {
+  INIT_USER,
   GET_USER,
   GET_USER_PENDING,
   GET_USER_ERROR,
@@ -12,6 +13,8 @@ const INITIAL_STATE = {
 
 const userReducer = (state = INITIAL_STATE, action) => {
   switch (action.type) {
+    case INIT_USER:
+      return INITIAL_STATE;
     case GET_USER:
       return {
         user: action.user,

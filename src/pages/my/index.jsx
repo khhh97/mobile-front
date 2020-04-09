@@ -1,7 +1,7 @@
 import Taro from '@tarojs/taro';
 import { View, Image, Text } from '@tarojs/components';
 import { connect } from '@tarojs/redux';
-import { getUser, updateAvatar } from '@/store/user/actions';
+import { getUser, updateAvatar, logout } from '@/store/user/actions';
 import { isEmpty } from 'lodash';
 import upload from '@/lib/upload';
 import myIcon from '@/assets/images/wodedangxuan.svg';
@@ -9,7 +9,7 @@ import zangIcon from '@/assets/images/dianzan.svg';
 import collectIcon from '@/assets/images/shoucang.svg';
 import historyIcon from '@/assets/images/chakanguo.svg';
 import settingIcon from '@/assets/images/shezhi.svg';
-import { baseUrl } from '../../env';
+import logoutIcon from '@/assets/images/logout.svg';
 import './index.scss';
 
 const menuConfig = [
@@ -27,7 +27,8 @@ const menuConfig = [
   }),
   dispatch => ({
     getUser: () => dispatch(getUser()),
-    updateAvatar: avatar => dispatch(updateAvatar(avatar))
+    updateAvatar: avatar => dispatch(updateAvatar(avatar)),
+    logout: () => dispatch(logout())
   })
 )
 class MyPage extends Taro.Component {
@@ -62,7 +63,6 @@ class MyPage extends Taro.Component {
 
   // 上传头像
   handleUploadAvatar = () => {
-    if (process.env.TARO_ENV === 'h5') return false;
     upload({
       url: '/user/avatar',
       name: 'avatar'
@@ -71,6 +71,14 @@ class MyPage extends Taro.Component {
       // eslint-disable-next-line taro/this-props-function
       this.props.updateAvatar(data);
     });
+  };
+
+  // 退出登录
+  handleLogout = () => {
+    // redux中的用户信息置空
+    // eslint-disable-next-line taro/this-props-function
+    this.props.logout();
+    Taro.clearStorageSync('token');
   };
 
   // 菜单栏点击事件
@@ -142,6 +150,17 @@ class MyPage extends Taro.Component {
                 <View className='user__menu-item-arrow'>&gt;</View>
               </View>
             ))}
+            {/*退出登录*/}
+            <View
+              className='user__menu-item'
+              onClick={this.handleLogout}
+            >
+              <View className='user__menu-item-text'>
+                <Image src={logoutIcon} className='user__menu-item-icon' />
+                <View>退出登录</View>
+              </View>
+              <View className='user__menu-item-arrow'>&gt;</View>
+            </View>
           </View>
         </View>
       </View>

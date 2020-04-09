@@ -1,9 +1,16 @@
 import Taro, { Component } from '@tarojs/taro';
 import { Provider } from '@tarojs/redux';
+import dayjs from 'dayjs';
+import 'dayjs/locale/zh-cn';
+import relativeTime from 'dayjs/plugin/relativeTime';
 import Index from './pages/index';
 import configStore from './store';
 import { getUser } from './store/user/actions';
 import './app.scss';
+
+// 全局设置dayjs语言
+dayjs.locale('zh-cn');
+dayjs.extend(relativeTime);
 
 const store = configStore();
 
@@ -16,11 +23,13 @@ class App extends Component {
   // eslint-disable-next-line react/sort-comp
   config = {
     pages: [
-      'pages/article/index',
       'pages/index/index',
+      'pages/post/index',
       'pages/robot/index',
       'pages/my/index',
-      'pages/login/index'
+      'pages/login/index',
+      'pages/article/index',
+      'pages/person/index'
     ],
     window: {
       navigationBarBackgroundColor: '#3296FA',
@@ -42,7 +51,7 @@ class App extends Component {
         },
         {
           text: '发表文章',
-          pagePath: 'pages/article/index',
+          pagePath: 'pages/post/index',
           iconPath: './assets/tabbar/post.png',
           selectedIconPath: './assets/tabbar/post-select.png'
         },
@@ -68,11 +77,14 @@ class App extends Component {
     dispatch(getUser());
   }
 
-  componentDidShow() {}
+  componentDidShow() {
+  }
 
-  componentDidHide() {}
+  componentDidHide() {
+  }
 
-  componentDidCatchError() {}
+  componentDidCatchError() {
+  }
 
   // 在 App 类中的 render() 函数没有实际作用
   // 请勿修改此函数

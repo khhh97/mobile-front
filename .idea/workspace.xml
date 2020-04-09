@@ -2,21 +2,33 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8cb24689-f6dd-487b-bd8a-4718135709fe" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/pages/article/index.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/config/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/jsconfig.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/images/logout.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/ArticleList/index.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/ArticleList/index.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Comment/index.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Comment/index.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Error/index.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Error/index.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/person/index.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/person/index.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/post/index.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/post/index.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/api/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/app.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/CustomInput/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/CustomInput/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/request.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/request.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Loading/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Loading/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/upload.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/upload.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/article/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/article/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/article/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/article/index.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/index/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/index/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/login/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/login/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/login/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/login/index.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/index/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/index/index.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/my/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/my/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/counter.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/constants.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/constants.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/user/actions.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/user/actions.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/user/reducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/user/reducer.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -24,6 +36,13 @@
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -33,8 +52,9 @@
     <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/assets/images" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.stylelint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -44,7 +64,13 @@
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="prettierjs.PrettierConfiguration.Package" value="E:\Graduation Project\mobile\node_modules\prettier" />
-    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.TypeScript" />
+    <property name="settings.editor.selected.configurable" value="preferences.updates" />
+    <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\WebStorm 2019.2.1\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\Graduation Project\mobile\src\assets\images" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -58,6 +84,16 @@
       </list>
     </option>
   </component>
+  <component name="RunManager">
+    <configuration name="index.jsx" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/src/pages/post/index.jsx" working-dir="$PROJECT_DIR$/src/pages/post">
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Node.js.index.jsx" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -68,7 +104,15 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1585896986181</updated>
-      <workItem from="1585896989145" duration="16325000" />
+      <workItem from="1585896989145" duration="16532000" />
+      <workItem from="1585998548478" duration="6730000" />
+      <workItem from="1586066271426" duration="11294000" />
+      <workItem from="1586150677205" duration="22639000" />
+      <workItem from="1586227840196" duration="13897000" />
+      <workItem from="1586260978770" duration="82000" />
+      <workItem from="1586261071518" duration="756000" />
+      <workItem from="1586336243250" duration="3945000" />
+      <workItem from="1586405732243" duration="24250000" />
     </task>
     <servers />
   </component>
@@ -80,7 +124,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>

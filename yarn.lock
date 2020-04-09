@@ -3152,7 +3152,7 @@ date-fns@^2.0.1:
   resolved "https://registry.npm.taobao.org/date-fns/download/date-fns-2.11.1.tgz?cache=0&sync_timestamp=1585251650681&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fdate-fns%2Fdownload%2Fdate-fns-2.11.1.tgz#197b8be1bbf5c5e6fe8bea817f0fe111820e7a12"
   integrity sha1-GXuL4bv1xeb+i+qBfw/hEYIOehI=
 
-dayjs@^1.7.7:
+dayjs@^1.7.7, dayjs@^1.8.23:
   version "1.8.23"
   resolved "https://registry.npm.taobao.org/dayjs/download/dayjs-1.8.23.tgz#07b5a8e759c4d75ae07bdd0ad6977f851c01e510"
   integrity sha1-B7Wo51nE11rge90K1pd/hRwB5RA=
