@@ -13,10 +13,10 @@ import logoutIcon from '@/assets/images/logout.svg';
 import './index.scss';
 
 const menuConfig = [
-  { id: 1, icon: myIcon, text: '我的主页', url: '' },
-  { id: 2, icon: zangIcon, text: '我赞过的', url: '' },
-  { id: 3, icon: collectIcon, text: '收藏集', url: '' },
-  { id: 4, icon: historyIcon, text: '阅读过的文章', url: '' },
+  { id: 1, icon: myIcon, text: '我的主页', url: '/pages/person/index' },
+  { id: 2, icon: zangIcon, text: '我赞过的', url: '/pages/history/index?type=like' },
+  { id: 3, icon: collectIcon, text: '收藏集', url: '/pages/history/index?type=collect' },
+  { id: 4, icon: historyIcon, text: '阅读过的文章', url: '/pages/history/index?type=history' },
   { id: 5, icon: settingIcon, text: '个人信息', url: '' }
 ];
 
@@ -82,12 +82,17 @@ class MyPage extends Taro.Component {
   };
 
   // 菜单栏点击事件
-  handleMenuClick = url => {
+  handleMenuClick = menu => {
     const { user } = this.props;
     const token = Taro.getStorageSync('token');
     const isLogin = token && Object.keys(user).length > 0;
     if (!isLogin) return this.handleNavigateToLogin();
-    console.log(url);
+    const { id, url } = menu;
+    if (id === 1) {
+      Taro.navigateTo({ url: `${url}?id=${user.id}` });
+    } else {
+      Taro.navigateTo({ url });
+    }
   };
 
   render() {
@@ -141,7 +146,7 @@ class MyPage extends Taro.Component {
               <View
                 key={menu.id}
                 className='user__menu-item'
-                onClick={() => this.handleMenuClick(menu.url)}
+                onClick={() => this.handleMenuClick(menu)}
               >
                 <View className='user__menu-item-text'>
                   <Image src={menu.icon} className='user__menu-item-icon' />

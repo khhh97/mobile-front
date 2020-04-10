@@ -1,0 +1,24 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 88px;
+  z-index: 999;
+  background: rgba(50, 150, 250, 1);
+  box-sizing: border-box;
+  padding: 0 20px 0 8px;
+
+  &__title {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 80%;
+    color: #fff;
+    white-space: nowrap;
+    overflow: hidden;
+    font-size: 26px;
+    text-overflow: ellipsis;
+  }
+}

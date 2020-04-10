@@ -63,5 +63,20 @@ export default {
   getUserInfo: {
     url: '/user/profile',
     method: 'get'
+  },
+  // 获取我的浏览历史
+  getHistory: {
+    url: '/user/my/history',
+    method: 'get'
+  },
+  // 获取我的收藏
+  getCollects: {
+    url: '/user/my/collect',
+    method: 'get'
+  },
+  // 获取我的点赞
+  getLikes: {
+    url: '/user/my/likes',
+    method: 'get'
   }
 };

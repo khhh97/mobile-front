@@ -40,8 +40,8 @@ class ArticleList extends Taro.PureComponent {
       centerStyle = {
         position: 'fixed',
         top: '50%',
-        left: '50%',
-        transform: 'translate(-50%, -50%)'
+        left: '0',
+        transform: 'translate(0, -50%)'
       };
     }
     return (
@@ -66,6 +66,20 @@ class ArticleList extends Taro.PureComponent {
                       key={article.id}
                       onClick={() => this.goToArticleDetail(article.id)}
                     >
+                      {
+                        showPoster && (
+                          <View className={`${blockClass}-item__user`}>
+                            <Image
+                              className={`${blockClass}-item__user-avatar`}
+                              src={article.user && article.user.avatar}
+                            />
+                            <View className={`${blockClass}-item__user-body`}>
+                              <View className={`${blockClass}-item__user-nickname`}>{article.user.nickname}</View>
+                              <View className={`${blockClass}-item__user-create`}>{dayjs(article.createdAt).format('YYYY-MM-DD')}</View>
+                            </View>
+                          </View>
+                        )
+                      }
                       <View className={`${blockClass}-item__body`}>
                         <View className={`${blockClass}-item__content`}>
                           <View className={cn(`${blockClass}-item__title`, { [`${blockClass}-item__title--padding`]: article.imgs.length === 1 })}>

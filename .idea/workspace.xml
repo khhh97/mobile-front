@@ -2,34 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8cb24689-f6dd-487b-bd8a-4718135709fe" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/assets/images/logout.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/ArticleList/index.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/ArticleList/index.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Comment/index.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Comment/index.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Error/index.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Error/index.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/person/index.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/person/index.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/post/index.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/post/index.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/history/index.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/history/index.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/api/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/app.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Loading/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Loading/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/upload.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/upload.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/article/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/article/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/article/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/article/index.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/index/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/index/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/index/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/index/index.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ArticleList/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ArticleList/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ArticleList/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ArticleList/index.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/my/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/my/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/constants.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/constants.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/user/actions.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/user/actions.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/user/reducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/user/reducer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/person/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/person/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/person/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/person/index.scss" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -112,7 +93,8 @@
       <workItem from="1586260978770" duration="82000" />
       <workItem from="1586261071518" duration="756000" />
       <workItem from="1586336243250" duration="3945000" />
-      <workItem from="1586405732243" duration="24250000" />
+      <workItem from="1586405732243" duration="24917000" />
+      <workItem from="1586497238456" duration="14879000" />
     </task>
     <servers />
   </component>

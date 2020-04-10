@@ -37,6 +37,38 @@
     box-sizing: border-box;
     border-bottom: 1PX solid #EDEFF3;
 
+    &__user {
+      display: flex;
+      margin-bottom: 36px;
+
+      &-avatar {
+        width: 72px;
+        height: 72px;
+        border-radius: 50%;
+      }
+
+      &-body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-left: 16px;
+      }
+
+      &-nickname {
+        font-size: 28px;
+        font-family: Microsoft YaHei;
+        font-weight: bold;
+        color: rgba(34, 34, 34, 1);
+      }
+
+      &-create {
+        font-size: 23px;
+        font-family: Arial;
+        font-weight: 400;
+        color: rgba(153, 153, 153, 1);
+      }
+    }
+
     &:last-of-type {
       border-bottom: none;
     }

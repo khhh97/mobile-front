@@ -29,7 +29,8 @@ class App extends Component {
       'pages/my/index',
       'pages/login/index',
       'pages/article/index',
-      'pages/person/index'
+      'pages/person/index',
+      'pages/history/index'
     ],
     window: {
       navigationBarBackgroundColor: '#3296FA',
