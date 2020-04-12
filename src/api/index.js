@@ -78,5 +78,20 @@ export default {
   getLikes: {
     url: '/user/my/likes',
     method: 'get'
+  },
+  // 更新用户信息
+  updateUser: {
+    url: '/user/update',
+    method: 'post'
+  },
+  // 获取关注列表
+  getFollows: {
+    url: '/follows',
+    method: 'get'
+  },
+  // 获取粉丝列表
+  getFans: {
+    url: '/fans',
+    method: 'get'
   }
 };

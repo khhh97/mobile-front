@@ -1,93 +1,79 @@
-.person {
-  height: 100%;
-  background-color: #F9F9F9;
+.my {
 
   &__header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 88px;
+    z-index: 999;
+    background: rgba(50, 150, 250, 1);
+    box-sizing: border-box;
+    padding: 0 20px 0 8px;
+
+    &-title {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      max-width: 80%;
+      color: #fff;
+      white-space: nowrap;
+      overflow: hidden;
+      font-size: 26px;
+      text-overflow: ellipsis;
+    }
+  }
+
+
+  &__item {
     display: flex;
-    padding: 20px 30px 60px;
-    background-color: #fff;
+    justify-content: space-between;
+    align-items: center;
+    height: 92px;
+    margin-left: 30px;
+    padding-right: 65px;
+    font-size: 28px;
+    color: #333333;
+    border-bottom: 1PX solid #E8E8E8;
 
-    &-left {
-      margin-right: 64px;
+    &-prefix {
+      min-width: 100px;
     }
 
-    &-right {
-      display: flex;
-      flex: 1;
-      flex-direction: column;
-      align-items: center;
+    &-input {
+      text-align: right;
+      font-size: 28px;
     }
+
   }
 
   &__avatar {
-    width: 160px;
-    height: 160px;
+    width: 60px;
+    height: 60px;
     border-radius: 50%;
   }
 
-  &__info {
-    display: flex;
-    align-self: flex-start;
-    width: 100%;
-    justify-content: space-between;
-  }
+  &__bio {
+    font-size: 28px;
+    color: #333333;
 
-  &__articles,
-  &__follow,
-  &__fan {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    font-size: 32px;
-    color: #222222;
-
-    &-text {
-      color: #999999;
-      font-size: 26px;
+    &-wrapper {
+      padding: 20px 30px 0;
+      box-sizing: border-box;
     }
   }
 
   &__btn {
-    &--follow {
-      width: 289px;
-      height: 55px;
-      font-size: 28px;
+    &--submit {
+      border-radius: 6px;
       color: #fff;
-      line-height: 55px;
       text-align: center;
-      margin-top: 20px;
-      background: rgba(107, 181, 255, 1);
-      border-radius: 10px;
+      font-size: 36px;
+      padding: 8px 0;
+      margin-top: 26px;
+      background-color: #3296FA;
     }
   }
-
-  &__information {
-    margin-top: 20px;
-    padding: 20px 20px 20px 30px;
-    background-color: #fff;
-  }
-
-  &__job,
-  &__bio {
-    display: flex;
-    line-height: 50px;
-    font-size: 28px;
-    color: #000;
-
-
-    &-prefix {
-      display: inline-block;
-      color: #656265;
-      font-size: 28px;
-      width: 110px;
-    }
-  }
-
-  &__list {
-    min-height: 200px;
-    margin-top: 20px;
-    background-color: #fff;
-  }
-
 
 }

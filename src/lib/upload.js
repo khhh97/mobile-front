@@ -1,5 +1,4 @@
 import Taro from '@tarojs/taro';
-import { baseUrl } from '../env';
 
 /**
  * @description 上传文件
@@ -10,7 +9,8 @@ import { baseUrl } from '../env';
 export const uploadFile = (options, file) => {
   return new Promise((resolve, reject) => {
     let { url, name, fileType = 'image' } = options;
-    url = baseUrl + url;
+    // eslint-disable-next-line no-undef
+    url = BASE_URL + url;
 
     if (process.env.TARO_ENV === 'h5') {
       if (!file) return false;

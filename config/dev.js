@@ -28,7 +28,9 @@ module.exports = {
   env: {
     NODE_ENV: '"development"'
   },
-  defineConstants: {},
+  defineConstants: {
+    BASE_URL: JSON.stringify('https://api-dev.khhh.ink/api')
+  },
   mini: {},
   h5: {
     devServer: {

@@ -3,6 +3,7 @@ module.exports = {
     NODE_ENV: '"production"'
   },
   defineConstants: {
+    BASE_URL: JSON.stringify('https://api.khhh.ink/api')
   },
   mini: {},
   h5: {

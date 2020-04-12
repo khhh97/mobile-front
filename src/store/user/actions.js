@@ -34,7 +34,6 @@ export const logout = () => ({
 });
 
 // 获取用户信息请求
-// eslint-disable-next-line import/prefer-default-export
 export const getUser = () => {
   return async dispatch => {
     const token = Taro.getStorageSync('token');
@@ -59,3 +58,5 @@ export const getUser = () => {
   };
 };
 
+// 修改用户信息
+export const changeUser = user => ({ type: GET_USER, user });

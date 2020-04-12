@@ -317,7 +317,7 @@ class Article extends Taro.PureComponent {
                   <View className='article__poster'>
                     <View
                       className='article__poster-left'
-                      onClick={() => Taro.navigateTo({ url: `/pages/person/index?id=${poster.id}` })}
+                      onClick={() => Taro.navigateTo({ url: `/pages/profile/index?id=${poster.id}` })}
                     >
                       <Image src={poster.avatar} className='article__poster-avatar' />
                       <View className='article__poster-info'>

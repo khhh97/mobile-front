@@ -1,0 +1,100 @@
+.person {
+  height: 100%;
+  background-color: #F9F9F9;
+
+  &__header {
+    display: flex;
+    padding: 20px 30px 60px;
+    background-color: #fff;
+
+    &-left {
+      margin-right: 64px;
+    }
+
+    &-right {
+      display: flex;
+      flex: 1;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  &__avatar {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+  }
+
+  &__info {
+    display: flex;
+    align-self: flex-start;
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  &__articles,
+  &__follow,
+  &__fan {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 32px;
+    color: #222222;
+
+    &-text {
+      color: #999999;
+      font-size: 26px;
+    }
+  }
+
+  &__btn {
+    &--follow {
+      width: 289px;
+      height: 55px;
+      font-size: 28px;
+      color: #fff;
+      line-height: 55px;
+      text-align: center;
+      margin-top: 20px;
+      background: rgba(107, 181, 255, 1);
+      border-radius: 10px;
+    }
+  }
+
+  &__information {
+    margin-top: 20px;
+    padding: 20px 20px 20px 30px;
+    background-color: #fff;
+  }
+
+  &__job,
+  &__bio {
+    display: flex;
+    line-height: 50px;
+    font-size: 28px;
+    color: #000;
+
+
+    &-prefix {
+      display: inline-block;
+      color: #656265;
+      font-size: 28px;
+      width: 110px;
+    }
+  }
+
+  &__list {
+    min-height: 200px;
+    margin-top: 20px;
+    background-color: #fff;
+
+    &--empty {
+      text-align: center;
+      font-size: 30px;
+      color: #999999;
+      margin-top: 30px;
+    }
+  }
+
+
+}

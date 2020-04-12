@@ -1,6 +1,5 @@
 import Taro from '@tarojs/taro';
 import Api from '../api';
-import { baseUrl } from '../env';
 
 /**
  * @description 封装的请求方法
@@ -23,7 +22,8 @@ const request = (name, option = {}) => {
 
     if (!/(http|https):\/\/([\w.]+\/?)\S*/.test(url)) {
       // 拼接url
-      url = baseUrl + url;
+      // eslint-disable-next-line no-undef
+      url = BASE_URL.replace(/\"/g, '') + url;
     }
 
     // 拼接header信息

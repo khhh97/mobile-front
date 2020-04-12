@@ -2,15 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8cb24689-f6dd-487b-bd8a-4718135709fe" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/pages/history/index.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/history/index.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/followOrFans/index.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/followOrFans/index.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/profile/index.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/profile/index.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/dev.js" beforeDir="false" afterPath="$PROJECT_DIR$/config/dev.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/prod.js" beforeDir="false" afterPath="$PROJECT_DIR$/config/prod.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/api/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ArticleList/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ArticleList/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ArticleList/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ArticleList/index.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/app.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/env.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/request.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/request.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/upload.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/upload.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/article/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/article/index.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/my/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/my/index.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/person/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/person/index.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/person/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/person/index.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/user/actions.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/user/actions.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -44,6 +52,7 @@
     <property name="node.js.selected.package.stylelint" value="$PROJECT_DIR$/node_modules/stylelint" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="yarn" />
     <property name="prettierjs.PrettierConfiguration.Package" value="E:\Graduation Project\mobile\node_modules\prettier" />
     <property name="settings.editor.selected.configurable" value="preferences.updates" />
     <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\WebStorm 2019.2.1\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
@@ -94,7 +103,9 @@
       <workItem from="1586261071518" duration="756000" />
       <workItem from="1586336243250" duration="3945000" />
       <workItem from="1586405732243" duration="24917000" />
-      <workItem from="1586497238456" duration="14879000" />
+      <workItem from="1586497238456" duration="15684000" />
+      <workItem from="1586592745201" duration="16081000" />
+      <workItem from="1586665114459" duration="6777000" />
     </task>
     <servers />
   </component>

@@ -25,12 +25,14 @@ class App extends Component {
     pages: [
       'pages/index/index',
       'pages/post/index',
-      'pages/robot/index',
+      // 'pages/robot/index',
       'pages/my/index',
       'pages/login/index',
       'pages/article/index',
+      'pages/profile/index',
+      'pages/history/index',
       'pages/person/index',
-      'pages/history/index'
+      'pages/followOrFans/index'
     ],
     window: {
       navigationBarBackgroundColor: '#3296FA',
@@ -56,12 +58,12 @@ class App extends Component {
           iconPath: './assets/tabbar/post.png',
           selectedIconPath: './assets/tabbar/post-select.png'
         },
-        {
-          text: '问答',
-          pagePath: 'pages/robot/index',
-          iconPath: './assets/tabbar/robot.png',
-          selectedIconPath: './assets/tabbar/robot-select.png'
-        },
+        // {
+        //   text: '问答',
+        //   pagePath: 'pages/robot/index',
+        //   iconPath: './assets/tabbar/robot.png',
+        //   selectedIconPath: './assets/tabbar/robot-select.png'
+        // },
         {
           text: '我的',
           pagePath: 'pages/my/index',

@@ -1,0 +1,95 @@
+.followOrFans {
+
+  &__header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 88px;
+    z-index: 999;
+    background: rgba(50, 150, 250, 1);
+    box-sizing: border-box;
+    padding: 0 20px 0 8px;
+
+    &-title {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      max-width: 80%;
+      color: #fff;
+      white-space: nowrap;
+      overflow: hidden;
+      font-size: 26px;
+      text-overflow: ellipsis;
+    }
+  }
+
+  &--empty {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 100%;
+    transform: translateY(-50%);
+    color: #999999;
+    font-size: 30px;
+    text-align: center;
+  }
+
+  &__list {
+
+    &-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 155px;
+      width: 100%;
+      box-sizing: border-box;
+      padding: 0 30px;
+      border: 1PX solid #E8E8E8;
+
+      &__left {
+        display: flex;
+        align-items: center;
+      }
+
+      &__avatar {
+        height: 100px;
+        width: 100px;
+        border-radius: 50%;
+      }
+
+      &__user {
+        &-name {
+          margin-left: 26px;
+          font-size: 28px;
+          color: rgba(34, 34, 34, 1);
+        }
+      }
+
+    }
+  }
+
+  &__btn {
+    width: 116px;
+    height: 56px;
+    background: rgba(255, 255, 255, 1);
+    border: 2px solid rgba(232, 232, 232, 1);
+    border-radius: 6px;
+    font-size: 23px;
+    color: rgba(153, 153, 153, 1);
+    line-height: 56px;
+    text-align: center;
+
+    &-follow {
+
+    }
+  }
+
+  &__footer {
+    color: #999999;
+    font-size: 30px;
+    text-align: center;
+    padding: 20px 0;
+  }
+}

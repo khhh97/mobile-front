@@ -13,11 +13,11 @@ import logoutIcon from '@/assets/images/logout.svg';
 import './index.scss';
 
 const menuConfig = [
-  { id: 1, icon: myIcon, text: '我的主页', url: '/pages/person/index' },
+  { id: 1, icon: myIcon, text: '我的主页', url: '/pages/profile/index' },
   { id: 2, icon: zangIcon, text: '我赞过的', url: '/pages/history/index?type=like' },
   { id: 3, icon: collectIcon, text: '收藏集', url: '/pages/history/index?type=collect' },
   { id: 4, icon: historyIcon, text: '阅读过的文章', url: '/pages/history/index?type=history' },
-  { id: 5, icon: settingIcon, text: '个人信息', url: '' }
+  { id: 5, icon: settingIcon, text: '个人信息', url: '/pages/person/index' }
 ];
 
 @connect(
@@ -125,18 +125,24 @@ class MyPage extends Taro.Component {
                   </View>
                 </View>
                 <View className='user__header-bottom'>
-                  <View className='user__article'>
+                  <View className='user__article' onClick={() => Taro.navigateTo({ url: `/pages/profile/index?id=${user.id}` })}>
                     {user.article_count}
                     <Text className='user__bottom-text'>动态</Text>
                   </View>
-                  <View className='user__follow'>
+                  <View
+                    className='user__follow'
+                    onClick={() => Taro.navigateTo({ url: `/pages/followOrFans/index?type=follow&id=${user.id}` })}
+                  >
                     {user.follow_count}
                     <Text className='user__bottom-text'>关注</Text>
                   </View>
-                  <View className='user__fans'>
-                    {user.fans_count}
-                    <Text className='user__bottom-text'>粉丝</Text>
-                  </View>
+                  {/*<View*/}
+                  {/*  className='user__fans'*/}
+                  {/*  onClick={() => Taro.navigateTo({ url: `/pages/followOrFans/index?type=fans&id=${user.id}` })}*/}
+                  {/*>*/}
+                  {/*  {user.fans_count}*/}
+                  {/*  <Text className='user__bottom-text'>粉丝</Text>*/}
+                  {/*</View>*/}
                 </View>
               </View>
             )}
